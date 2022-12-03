@@ -92,13 +92,18 @@ p {
 
 button {
     font-size: 1em;
-    border: none;
+    font-weight: 600;
+    background: #1021407c;
+    color: white !important;
+    border: 1px solid white !important;
     color: #3D3D3D;
-    width: 117px;
+    width: 110px;
     height: 42px;
     border-radius: 5px;
     cursor: pointer;
     transition: .5s ease-in-out;
+    margin-bottom: 24px;
+
 
     &:hover {
         transform: scale(1.05);
