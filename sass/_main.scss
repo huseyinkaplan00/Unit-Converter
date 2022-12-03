@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .main-box {
+        position: relative;
+        background: #f4f4f428;
+        width: 100%;
+        max-width: 550px;
+        height: 729px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        .darkMode {
+            position: absolute;
+            top: 294px;
+            right: 26px;
+            background-color: #5A537B;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+
+            &::before {
+                content: "Dark Mode🌛";
+            }
+        }
+
+        .lightMode {
+
+            background-color: #ffffff;
+            color: rgb(16, 16, 16);
+            padding: 5px;
+            border-radius: 5px;
+
+            &::before {
+                content: "Light Mode🌞";
+            }
+
+        }
+
+        .input-section {
+            background: #6943ff41;
+            width: 100%;
+            min-height: 285px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .converted-section {
+            display: grid;
+            grid-gap: 23.43px;
+            grid-template-columns: repeat(auto-fill, minmax(1fr));
+            grid-auto-rows: 108.57px;
+            margin: 3.25em 1.5625em 2.214375em 1.5625em;
+
+            .box {
+                background: #273549;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                h2 {
+                    color: #5A537B;
+                }
+            }
+        }
+    }
+}

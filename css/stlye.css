@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.container .main-box {
+  position: relative;
+  background: rgba(244, 244, 244, 0.1568627451);
+  width: 100%;
+  max-width: 550px;
+  height: 729px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container .main-box .darkMode {
+  position: absolute;
+  top: 294px;
+  right: 26px;
+  background-color: #5A537B;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.container .main-box .darkMode::before {
+  content: "Dark Mode🌛";
+}
+.container .main-box .lightMode {
+  background-color: #ffffff;
+  color: rgb(16, 16, 16);
+  padding: 5px;
+  border-radius: 5px;
+}
+.container .main-box .lightMode::before {
+  content: "Light Mode🌞";
+}
+.container .main-box .input-section {
+  background: rgba(105, 67, 255, 0.2549019608);
+  width: 100%;
+  min-height: 285px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .main-box .converted-section {
+  display: grid;
+  grid-gap: 23.43px;
+  grid-template-columns: repeat(auto-fill, minmax(1fr));
+  grid-auto-rows: 108.57px;
+  margin: 3.25em 1.5625em 2.214375em 1.5625em;
+}
+.container .main-box .converted-section .box {
+  background: #273549;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .main-box .converted-section .box h2 {
+  color: #5A537B;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: white;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  margin: 10px 0;
+  background: linear-gradient(-45deg, rgba(2, 61, 125, 0.3098039216), #001845, #001233, #7d8597);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  transform: scale(0.95);
+  overflow-y: hidden;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 70%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 70%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.black {
+  background: #1F2937 !important;
+}
+
+.boxOne {
+  background: #FFFFFF !important;
+}
+
+.boxTwo {
+  background: #FFFFFF !important;
+}
+
+.boxThree {
+  background: #FFFFFF !important;
+}
+
+.colorWhite {
+  color: #FFFFFF !important;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.75em;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: -0.03em;
+  line-height: 136%;
+}
+
+h2 {
+  font-size: 1.25em;
+  line-height: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.875em;
+  color: #353535;
+  line-height: 143%;
+  text-align: center;
+}
+
+button {
+  font-size: 1em;
+  border: none;
+  color: #3D3D3D;
+  width: 117px;
+  height: 42px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+button:hover {
+  transform: scale(1.05);
+}
+
+input {
+  border: 2px solid #B295FF;
+  border-radius: 5px;
+  width: 117px;
+  height: 83px;
+  background: none;
+  font-weight: 800;
+  color: #fff;
+}
+input ::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer;
+}
+input:focus {
+  outline: none;
+}
+input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.124);
+  font-size: 30px;
+}
+input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.124);
+  font-size: 30px;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.124);
+  font-size: 30px;
+}
+input[type=number] {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 0.95em;
+  }
+  .main-box {
+    width: 90% !important;
+    margin: 13px 0;
+  }
+}/*# sourceMappingURL=stlye.css.map */
