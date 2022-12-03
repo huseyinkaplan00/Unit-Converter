@@ -1,5 +1,5 @@
 # Unit-Converter
-Built with SCSS and JS. 
-Metric/Imperial Unit Conversion.
+
+Metric/Imperial Unit Conversion built with SCSS and JS.
 
 Live at : 
