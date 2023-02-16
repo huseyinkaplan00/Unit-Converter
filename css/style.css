@@ -5,6 +5,10 @@
   width: 100%;
   justify-content: center;
 }
+.container .main-box,
+.container .box {
+  overflow-y: scroll;
+}
 .container .main-box {
   position: relative;
   background: rgba(244, 244, 244, 0.1568627451);
@@ -60,7 +64,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  overflow-y: scroll;
 }
 .container .main-box .converted-section .box h2 {
   color: #5A537B;
