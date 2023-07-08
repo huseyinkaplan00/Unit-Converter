@@ -1,8 +1,3 @@
-# Table of contents
-
-  - [Description](#Description)
-  - [Built with](#built-with) 
-  - [Links](#links)
 
 ## Description
 Metric / Imperial Unit Conversion built with SCSS and JS.
